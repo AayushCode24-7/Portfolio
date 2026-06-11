@@ -2,56 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayush Jindal | Custom 3D Portfolio</title>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+
 </head>
 <body>
-
-    <div id="loader-overlay">
-        <canvas id="loader-canvas"></canvas>
-        
-        <div id="loader-text-container">
-            <h1 class="loader-title">AAYUSH JINDAL</h1>
-            <p class="loader-subtitle">Processing Fluid Architecture...</p>
-        </div>
+    <div id = "main">
+        <div id = "page"></div>
+        <div id = "page1"></div>
+        <div id = "page2"></div>
+        <div id = "page3"></div>
     </div>
 
-    <div id="portfolio-content" class="hidden">
-        <canvas id="three-bg"></canvas>
+    <script src = "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#" class="nav-logo">&lt;AJ/&gt;</a>
-            </div>
-        </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <main>
-            <section class="page-section">
-                <span class="tagline">Systems & Optimization</span>
-                <h1>Aayush Jindal</h1>
-                <p class="subtitle">Software Engineer & Core Web Architect</p>
-                <div class="scroll-indicator">
-                    <span>↓ Scroll down to transform the geometry</span>
-                </div>
-            </section>
+    <script src= "script.js"></script> 
 
-            <section class="page-section">
-                <h2>Featured Productions</h2>
-                <div class="project-card">
-                    <h3>Full-Stack Netflix Platform Clone</h3>
-                    <p class="description">
-                        Engineered a high-performance streaming interface executing a custom Python Flask server architecture handling dynamic CRUD logic and API transactions.
-                    </p>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <script src="loader.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
