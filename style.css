@@ -111,8 +111,8 @@ canvas{
 }
 #page1>#right-text{
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 20%;
+    left: 5%;
 }
 #page1>#right-text>h3{
     font-weight: 400;
