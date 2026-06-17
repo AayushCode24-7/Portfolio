@@ -57,17 +57,17 @@ html, body {
 
 /* Typography styles for the newly structured Page 1 phrases */
 .bold-phrase {
-    font-size: 50px;
+    font-size: 43px;
     font-weight: 800;
-    line-height: 1.2;
-    margin: 6px 0;
-    text-transform: uppercase;
+    line-height: 1.0;
+    margin: 2px 0;
+    text-transform: capitalize;
     white-space: nowrap;
 }
 
 #page1 h3 {
     font-weight: 400;
-    color: #7c7c7c;
+    color: #769044;
     margin-bottom: 10px;
 }
 /* ----------------------------------------- */
