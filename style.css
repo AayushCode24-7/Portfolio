@@ -58,7 +58,7 @@ html, body {
 /* Typography styles for the newly structured Page 1 phrases */
 .bold-phrase {
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.0;
     margin: 2px 0;
     text-transform: capitalize;
