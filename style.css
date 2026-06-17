@@ -181,20 +181,20 @@ canvas {
 }
 
 #page2>#text1>h1 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.5;
 }
 
 #page2>#text2 {
     position: absolute;
-    top: 55%;
+    top: 75%;
     right: 10%;
     text-align: end;
 }
 
 #page2>#text2>p {
     color: #7c7c7c;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 #page3>#text3 {
