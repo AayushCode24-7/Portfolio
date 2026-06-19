@@ -204,3 +204,7 @@ body.cursor-hover #cursor-ring{
   color: var(--volt);
   -webkit-text-stroke: 0;
 }
+@keyframes marquee-anim {
+  0%   { transform: translateX(10%); }
+  100% { transform: translateX(-100%); }
+}
