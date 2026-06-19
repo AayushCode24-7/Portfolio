@@ -134,5 +134,19 @@ body.cursor-hover #cursor-ring{
     transition: color 0.2s ease;
 }
 #nav .nav-links a:hover{
-    color:blueviolet;
+    color: #c8f135;
+}
+#nav .nav-date {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#c8f135;
+  border: 0.1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#nav .nav-date:hover {
+  background: #c8f135;
+  color: #000000;
+  border-color: #c8f135;
 }
