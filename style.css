@@ -172,3 +172,35 @@ body.cursor-hover #cursor-ring{
   padding: 20px 20px;
   z-index: 10;
 }
+/* The Back Loop */
+#loop h1 {
+    font-family: var(--font-display);
+    font-size: clamp(50px, 10vw, 80px);
+    font-weight: 400;
+    color:#c8f135;
+    letter-spacing: 0.03em;
+    animation: marquee-anim 20s linear infinite;
+    padding-right: 80px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+#loop h1 b{
+    font-weight: 900;
+}
+#loop h1 i{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--smoke);
+}
+
+#loop h1 span {
+  -webkit-text-stroke: 1px var(--parchment);
+  color: transparent;
+  font-weight: 900;
+}
+
+#loop h1 .volt-word {
+  color: var(--volt);
+  -webkit-text-stroke: 0;
+}
