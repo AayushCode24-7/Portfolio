@@ -245,3 +245,13 @@ canvas{
   font-style: italic;
   color:#c8f135;
 }
+#page .hero-copy b{
+  font-style: oblique;
+  color: #a067aa;
+  font-weight: 500;
+}
+
+#page .hero-copy u{
+  text-decoration: underline var(--volt);
+  text-underline-offset: 1.2px;
+}
