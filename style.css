@@ -379,11 +379,32 @@ canvas{
 }
 
 #page2 .work-header h3 {
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 900;
   letter-spacing: 0.23em;
   text-transform: uppercase;
-  color: var(--volt);
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--volt);
   margin-bottom: 10px;
-  
+}
+
+#page2 .work-header h1{
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.1;
+  color: var(--parchment);
+  text-decoration: underline;
+}
+
+.work-grid{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 40%;
+  display: grid;
+  grid-template-columns: repeat(3);
+  border-top: 0.5px solid var(--volt);
 }
