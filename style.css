@@ -185,7 +185,12 @@ body.cursor-hover #cursor-ring{
     flex-shrink: 0;
 }
 #loop h1 b{
+    color:#c8f135;
     font-weight: 900;
+}
+#loop h1 span{
+    color:transparent;
+    -webkit-text-stroke: #c8f135;
 }
 #loop h1 i{
   font-family: var(--font-display);
