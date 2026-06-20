@@ -360,6 +360,7 @@ canvas{
 }
 
 /* Page 2 */
+
 #page2 {
   position: relative;
   height: 100vh;
@@ -397,7 +398,7 @@ canvas{
   color: var(--parchment);
   text-decoration: underline;
 }
-
+/* Page 2 Grid */
 .work-grid{
   position: absolute;
   bottom: 0;
@@ -408,3 +409,41 @@ canvas{
   grid-template-columns: repeat(3);
   border-top: 0.5px solid var(--volt);
 }
+
+.work-card{
+  border-right: 0.5px solid var(--deep);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: background 1.35s ease;
+  cursor: none;
+  z-index: 1;
+}
+
+.work-card:last-child{
+  border-right: none;
+}
+
+.work-card::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--volt-dim);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: -1;
+}
+
+.work-card:hover::before{
+  opacity: 1;
+}
+.proj-title{
+  position: relative;
+  z-index: 2;
+  transition: color 1s ease;
+}
+.work-card:hover .proj-title{
+  color: rgb(142, 42, 199);}
