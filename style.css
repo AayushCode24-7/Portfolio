@@ -276,15 +276,85 @@ canvas{
 #page4 .sec-index  { top: 8%;  right: 5%; }
 
 /* Page 1 */
+
 #page1{
   position: relative;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   background: var(--void);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10 6%;
+  padding: 0 6%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+#page1 ::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 60%;
+  background: var(--border);
+}
+
+.text-column{
+  display: flex;
+  flex-direction: column;
+  max-width: 38%;
+  z-index: 10;
+  will-change: transform;
+}
+
+.text-column.left-side {
+  text-align: left;
+  margin-bottom: 20%;
+}
+
+.text-column.right-side {
+  text-align: right;
+  align-items: flex-end;
+  margin-top: 20%;
+}
+.bold-phrase {
+  font-family: var(--font-ui);
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 800;
+  line-height: 1.0;
+  margin: 3px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--parchment);
+  white-space: nowrap;
+}
+
+.bold-phrase.accent {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--volt);
+}
+
+.bold-phrase .volt-word {
+  color: transparent;
+  -webkit-text-stroke:2px var(--volt);
+}
+
+#page1 h3.col-label b{
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.9px var(--volt);
+}
+
+#page1 h3.col-footer {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--volt);
+  margin-top: 14px;
 }
