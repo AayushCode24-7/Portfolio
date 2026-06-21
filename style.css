@@ -473,6 +473,7 @@ canvas{
   text-transform: uppercase;
   font-weight: 600;
   color:var(--parchment);
+  text-decoration: underline;
 }
 
 .work-desc{
@@ -483,4 +484,20 @@ canvas{
   max-height: 0;
   overflow: visible;
   transition: max-height 0.4 ease, opacity 0.3 ease;
+}
+
+.work-card:hover .work-desc{
+  max-height: 80px;
+}
+
+.work-arrow{
+  font-size: 18px;
+  color: var(--parchment);
+  align-self: flex-end;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.work-card:hover .work-arrow {
+  transform: translate(4px, 4px, 4px);
+  color: var(--volt);
 }
