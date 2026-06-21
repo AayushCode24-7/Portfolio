@@ -440,10 +440,47 @@ canvas{
 .work-card:hover::before{
   opacity: 1;
 }
-.proj-title{
+.work-title{
   position: relative;
   z-index: 2;
   transition: color 1s ease;
 }
-.work-card:hover .proj-title{
-  color: rgb(142, 42, 199);}
+.work-card:hover .work-title{
+  color:#c8f135;
+}
+
+.work-num{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color:#c8f135;
+  margin-bottom: 10px;
+}
+
+.work-title{
+  font-family: var(--font-ui);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 0.6px var(--parchment);
+  transition: color 1s ease-in-out;
+  margin-bottom: 12px;
+}
+.work-stack{
+  font-family: var(--font-ui);
+  font-size:medium;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:var(--parchment);
+}
+
+.work-desc{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color:beige;
+  max-height: 0;
+  overflow: visible;
+  transition: max-height 0.4 ease, opacity 0.3 ease;
+}
