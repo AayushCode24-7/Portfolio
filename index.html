@@ -4,166 +4,290 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Aayush Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
+
 <body>
-     <!-- Cursor -->
-     <div id = "cursor"></div>
-     <div id = "cursor-ring"></div>
 
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
 
-     <!-- Scanline Overlay  -->
-     <div id = "scanlines"></div>
+    <!-- Scanline Overlay -->
+    <div id="scanlines"></div>
 
-     <!-- Navigation -->
-     <nav id = "nav">
-        <div class = "nav-name"><b>AAYUSH'S | <span>PORTFOLIO</span></b></div>
-        <div class = "nav-right">
-            <ul class = "nav-links">
-                <li><a href = "#page1"> Manifesto</a></li>
-                <li><a href = "#page2"> workects</a></li>
-                <li><a href = "#page3"> Tech Stack</a></li>
-                <li><a href = "#page4"> Contact</a></li>
-            </ul>
-            <span class = "nav-date"> JUNE, 2026</span>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-name">
+            <b>AAYUSH'S | <span>PORTFOLIO</span></b>
         </div>
-     </nav>
 
-     <!-- Scroll Container -->
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#page1">Manifesto</a></li>
+                <li><a href="#page2">Work</a></li>
+                <li><a href="#page3">Tech Stack</a></li>
+                <li><a href="#page4">Contact</a></li>
+            </ul>
+
+            <span class="nav-date">JUNE, 2026</span>
+        </div>
+    </nav>
+
+    <!-- Main Scroll Container -->
     <div id="main">
+
+        <!-- Hero Section -->
         <div id="page">
+
             <span class="sec-index">Hero</span>
 
-        <div id="loop">
-        <h1><b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;<b>·</b>&nbsp;
-        <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;</h1>
-        <h1><b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;<b>·</b>&nbsp;
-        <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY<span>PORTFOLIO</span>&nbsp;</h1>
-        <h1><b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY<span>PORTFOLIO</span>&nbsp;<b>·</b>&nbsp;
-        <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY<span>PORTFOLIO</span>&nbsp;</h1>
-      </div>
+            <div id="loop">
+                <h1>
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>·</b>&nbsp;
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                </h1>
 
-        <!-- 3D Canvas -->
-      <canvas id = "hero-canvas"></canvas>
-      <div class = "hero-copy">
-            <h3>
-                Bridging the gap between <b>beautiful design </b>and <i>powerful logic</i>.
-                <br>I architect robust <b>backend systems</b> and craft seamless user experiences from scratch. 
-                <br><u>Always ready to build something incredible.</u>
-        </h3>
-      </div>
-      <!-- SC Hint -->
-       <div class = "scroll-hint"> Scroll Down</div>
+                <h1>
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>·</b>&nbsp;
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                </h1>
+
+                <h1>
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>·</b>&nbsp;
+                    <b>I AM</b> AAYUSH,
+                    <b><i>A</i></b> FULL STACK DEVELOPER
+                    <b>·</b>
+                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                </h1>
+            </div>
+
+            <!-- Canvas -->
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+            <div class="hero-copy">
+                <h3>
+                    Bridging the gap between <b>beautiful design</b> and
+                    <i>powerful logic</i>.
+                    <br>
+                    I architect robust <b>backend systems</b> and craft seamless
+                    user experiences from scratch.
+                    <br>
+                    <u>Always ready to build something incredible.</u>
+                </h3>
+            </div>
+
+            <div class="scroll-hint">Scroll Down</div>
+
         </div>
+
         <!-- Manifesto -->
         <div id="page1">
-            <span class = "sec-index">Manifesto</span>
 
-            <div class="text-column left-side" id = "col-left">
-                <h3 class = "col-label"><b>VISUAL INTERACTION</b></h3>
+            <span class="sec-index">Manifesto</span>
+
+            <div class="text-column left-side" id="col-left">
+
+                <h3 class="col-label"><b>VISUAL INTERACTION</b></h3>
+
                 <h1 class="bold-phrase">TURNING IDEAS</h1>
-                <h1 calss = "bold-phase accent">TO CODE</h1>
+                <h1 class="bold-phrase accent">TO CODE</h1>
+
                 <h1 class="bold-phrase">CRAFTING</h1>
-                <h1 class = "bold-phase accent">DIGITAL ART</h1>
+                <h1 class="bold-phrase accent">DIGITAL ART</h1>
+
                 <h1 class="bold-phrase">DESIGNING FOR</h1>
-                <h1 class = "bold-phase accent"><span class = "volt-word">IMPACT</span></h1>
-                <h3 class = "col-footer"> nah nah nah nah</h3>
+                <h1 class="bold-phrase accent">
+                    <span class="volt-word">IMPACT</span>
+                </h1>
+
+                <h3 class="col-footer">nah nah nah nah</h3>
+
             </div>
-            
-            <div clas s="text-column right-side" id = "col-right">
+
+            <div class="text-column right-side" id="col-right">
+
                 <h1 class="bold-phrase">ENGINEERING</h1>
                 <h1 class="bold-phrase accent">SYSTEMS</h1>
+
                 <h1 class="bold-phrase">OPTIMIZING</h1>
                 <h1 class="bold-phrase accent">EVERY FRAME</h1>
+
                 <h1 class="bold-phrase">OWNING THE</h1>
-                <h1 class="bold-phrase accent"><span class = "volt-work">STACK</span></h1>
-                <h3 class = "col-footer"> blah blah blah blah</h3>
+                <h1 class="bold-phrase accent">
+                    <span class="volt-word">STACK</span>
+                </h1>
+
+                <h3 class="col-footer">blah blah blah blah</h3>
+
             </div>
+
         </div>
 
-        <!-- Page 2 (workects) -->
+        <!-- Work Section -->
         <div id="page2">
-            <span class = "sec-index">workects</span>
-            <div class = "work-header">
+
+            <span class="sec-index">Work</span>
+
+            <div class="work-header">
                 <h3>WORK VAULT</h3>
                 <h1>Best Till Now</h1>
             </div>
 
-            <div class = "work-grid">
-
-                <div class = "work-card">
-                    <div>
-                        <div class = "work-num"> 1.(2025)</div>
-                        <div class = "work-title"> Airline-Info-System</div>
-                        <div class = "work-stack"> Python . SQL</div>
-                        <div class = "work-desc"> Airline Information System is a modular Python console application that streamlines flight management and bookings. It eliminates data-entry errors through strict validation, ensures data persistence through file handling, and demonstrates robust, crash-resistant error handling within a clean terminal-based architecture.</div>
-                    </div>
-                    <span class = "work-arrow">↗</span>
-                </div>
+            <div class="work-grid">
 
                 <div class="work-card">
                     <div>
-                        <div class="work-num">2 (2026)</div>
-                        <div class="work-title">Web-Design</div>
-                        <div class="work-stack">HTML . CSS . JavaScript</div>
-                        <div class="work-desc">A modern, dark-themed community landing page for developers, featuring a responsive layout, interactive join form, CSS-based bar chart, and referral section—all built with semantic HTML5 and custom CSS.</div>
+                        <div class="work-num">1. (2025)</div>
+                        <div class="work-title">Airline-Info-System</div>
+                        <div class="work-stack">Python · SQL</div>
+
+                        <div class="work-desc">
+                            Airline Information System is a modular Python console
+                            application that streamlines flight management and bookings.
+                            It eliminates data-entry errors through strict validation,
+                            ensures data persistence through file handling, and
+                            demonstrates robust crash-resistant error handling.
+                        </div>
                     </div>
+
                     <span class="work-arrow">↗</span>
                 </div>
 
                 <div class="work-card">
                     <div>
-                        <div class="work-num">3 (2026)</div>
-                        <div class="work-title">Netflix-Clone</div>
-                        <div class="work-stack">SQL . Python . JavaScript . HTML . CSS</div>
-                        <div class="work-desc">A brief description of what this workect does, the problem it solves, and what makes it interesting.</div>
+                        <div class="work-num">2. (2026)</div>
+                        <div class="work-title">Web Design</div>
+                        <div class="work-stack">HTML · CSS · JavaScript</div>
+
+                        <div class="work-desc">
+                            A modern dark-themed community landing page for developers,
+                            featuring a responsive layout, interactive join form,
+                            CSS-based charts, and referral features.
+                        </div>
                     </div>
+
                     <span class="work-arrow">↗</span>
                 </div>
-              
+
+                <div class="work-card">
+                    <div>
+                        <div class="work-num">3. (2026)</div>
+                        <div class="work-title">Netflix Clone</div>
+                        <div class="work-stack">
+                            SQL · Python · JavaScript · HTML · CSS
+                        </div>
+
+                        <div class="work-desc">
+                            A streaming platform clone built to practice frontend
+                            architecture, database integration, responsive layouts,
+                            and user-focused design.
+                        </div>
+                    </div>
+
+                    <span class="work-arrow">↗</span>
+                </div>
+
             </div>
+
         </div>
 
-        <!-- Page 3 (Tech Stack) -->
+        <!-- Tech Stack -->
         <div id="page3">
-            <span class = "sec-index"> Tech Stack </span>
 
-            <div class = "feild-content">
-                <h1 data-text = "My Tech Stack">
+            <span class="sec-index">Tech Stack</span>
+
+            <div class="field-content">
+
+                <h1 data-text="My Tech Stack">
                     My Tech Stack
                 </h1>
-                <p class = "field-sub">
+
+                <p class="field-sub">
                     A list of technologies and tools I use to build modern web applications.
                 </p>
+
             </div>
+
         </div>
-        <!-- Page 4 (Contact) -->
-        <div id = "page 4">
-            <span class = "sec-index"> Contact </span>
 
-            <span class = "contact-label"> Let's Colaborate</span>
-            <h1 class = "contact-heading"> Get In <span>Touch</span></h1>
-            <a href = "mailto: aayushjindal65@gmail.com"  class = "contact-email"> aayushjindal65@gmail.com </a>
+        <!-- Contact -->
+        <div id="page4">
 
-            <div class = "social">
-                <a href = "https://github.com/AayushCode24-7" target = "_blank" class = "social-link">Github</a>
-                <a href = "https://www.instagram.com/aayush_jindall/" target = "_blank" class = "social-link">Instagram</a>
-                <a href = "https://www.linkedin.com/in/aayush-jindal-60016837a/?skipRedirect=true" target = "_blank" class = "social-link">LinkedIn</a>
-                <a href = "#" target="_blank" class = "social-link">Resume ↓</a>
+            <span class="sec-index">Contact</span>
+
+            <span class="contact-label">Let's Collaborate</span>
+
+            <h1 class="contact-heading">
+                Get In <span>Touch</span>
+            </h1>
+
+            <a href="mailto:aayushjindal65@gmail.com" class="contact-email">
+                aayushjindal65@gmail.com
+            </a>
+
+            <div class="social">
+
+                <a href="https://github.com/AayushCode24-7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-link">
+                    Github
+                </a>
+
+                <a href="https://www.instagram.com/aayush_jindall/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-link">
+                    Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/in/aayush-jindal-60016837a/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-link">
+                    LinkedIn
+                </a>
+
+                <a href="#"
+                   class="social-link">
+                    Resume ↓
+                </a>
+
             </div>
 
-            <div class = "footer-line">
-                <span> Aayush Jindal </span>
-                <span> Full Stack Developer </span>
-                <span> © 2026 Aayush Jindal. All rights reserved. </span>
+            <div class="footer-line">
+                <span>Aayush Jindal</span>
+                <span>Full Stack Developer</span>
+                <span>© 2026 Aayush Jindal. All rights reserved.</span>
             </div>
-         </div>
+
+        </div>
+
     </div>
 
-
-        <!-- Scripts -->
+    <!-- Scripts -->
     <script src = "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
