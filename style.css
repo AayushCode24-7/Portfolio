@@ -398,7 +398,9 @@ canvas{
   color: var(--parchment);
   text-decoration: underline;
 }
+/*  */
 /* Page 2 Grid */
+/*  */
 .work-grid{
   position: absolute;
   bottom: 0;
@@ -406,7 +408,7 @@ canvas{
   right: 0;
   top: 40%;
   display: grid;
-  grid-template-columns: repeat(3);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 0.5px solid var(--volt);
 }
 
