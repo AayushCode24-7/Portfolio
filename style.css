@@ -33,43 +33,43 @@ html, body {
 }
 /* Cursor */
 #cursor {
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 15px;
-    height: 15px;
-    background: var(--volt);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
-    mix-blend-mode: difference;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--volt);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+  mix-blend-mode: difference;
 }
 #cursor-ring{
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--volt);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
-    opacity: 0.5;
-    mix-blend-mode: difference;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--volt);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+  opacity: 0.5;
+  mix-blend-mode: difference;
 }
 
 body.cursor-hover #cursor {
-    width: 10px;
-    height: 10px;
-    background: var(--volt);
+  width: 10px;
+  height: 10px;
+  background: var(--volt);
 }
 body.cursor-hover #cursor-ring{
-    width: 50px;
-    height: 50px;
-    border-color: var(--volt);
+  width: 50px;
+  height: 50px;
+  border-color: var(--volt);
 }
 
 /* Scanline Overlay */
@@ -82,11 +82,11 @@ body.cursor-hover #cursor-ring{
   pointer-events: none;
   z-index: 9990;
   background: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 2px,
-    rgba(0,0,0,0.04) 2px,
-    rgba(0,0,0,0.04) 4px
+  to bottom,
+  transparent,
+  transparent 2px,
+  rgba(0,0,0,0.04) 2px,
+  rgba(0,0,0,0.04) 4px
   );
 }
 
@@ -121,20 +121,20 @@ body.cursor-hover #cursor-ring{
   gap: 30px;
 }
 #nav .nav-links{
-    display: flex;
-    list-style: none;
-    gap: 15px;
+  display: flex;
+  list-style: none;
+  gap: 15px;
 }
 #nav .nav-links a{
-    font-size: 18px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color:honeydew;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color:honeydew;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 #nav .nav-links a:hover{
-    color: #c8f135;
+  color: #c8f135;
 }
 #nav .nav-date {
   font-size: 12px;
@@ -157,6 +157,7 @@ body.cursor-hover #cursor-ring{
   width: 100vw;
   background: var(--void);
   overflow: hidden;
+  perspective: 1200px;
 }
 /* loop */
 #loop {
@@ -172,25 +173,54 @@ body.cursor-hover #cursor-ring{
   padding: 20px 20px;
   z-index: 1;
 }
+#loop {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+  transform-style: preserve-3d;
+  transform: rotateX(18deg) translateZ(0);
+  transform-origin: center;
+}
+
 /* The Back Loop */
 #loop h1 {
   font-family: var(--font-display);
   font-size: 66px;
   font-weight: 400;
-  color:#ffffff;
+  color:#c8f135;
   letter-spacing: 0.03em;
   animation: marquee-anim 20s linear infinite;
   padding-right: 80px;
   white-space: nowrap;
   flex-shrink: 0;
+
+  will-change: transform;
+
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+  0 2px 10px rgba(200,241,53,0.15);
+
+  animation: marquee-anim 35s linear infinite;
+  transform: translateZ(40px);
 }
 #loop h1 b{
-    color:#c8f135;
-    font-weight: 900;
+  color:#c8f135;
+  font-weight: 900;
 }
 #loop h1 span{
-    color:transparent;
-    -webkit-text-stroke: #c8f135;
+  color:transparent;
+  -webkit-text-stroke: #c8f135;
 }
 #loop h1 i{
   font-family: var(--font-display);
@@ -209,13 +239,20 @@ body.cursor-hover #cursor-ring{
   color: var(--volt);
   -webkit-text-stroke: 0;
 }
-@keyframes marquee-anim {
-  from {
-    transform: translate3d(0, 0, 0);
+@keyframes float3d {
+  0% {
+    transform: rotateX(18deg) translateY(0px);
   }
-  to {
-    transform: translate3d(-100%, 0, 0);
+  50% {
+    transform: rotateX(18deg) translateY(-6px);
   }
+  100% {
+    transform: rotateX(18deg) translateY(0px);
+  }
+}
+
+#loop {
+  animation: float3d 6s ease-in-out infinite;
 }
 
 /* Hero canvas */
@@ -258,6 +295,15 @@ canvas{
 #page .hero-copy u{
   text-decoration: underline var(--volt);
   text-underline-offset: 1.2px;
+}
+
+#hero-canvas {
+  z-index: 5;
+}
+
+.hero-copy {
+  z-index: 10;
+  position: absolute;
 }
 
 /* Scroll Effect */
