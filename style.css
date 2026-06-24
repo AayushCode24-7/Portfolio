@@ -350,7 +350,7 @@ canvas{
   overflow: hidden;
 }
 
-#page1 ::before{
+#page1::before{
   content: '';
   position: absolute;
   top: 50%;
@@ -545,7 +545,7 @@ canvas{
   color:beige;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4 ease, opacity 0.3 ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .work-card:hover .work-desc{
@@ -601,3 +601,4 @@ canvas{
   color: var(--parchment);
   position: relative;
 }
+
