@@ -177,19 +177,19 @@ body.cursor-hover #cursor-ring{
 }
 #loop {
   -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
+  to right,
+  transparent,
+  black 15%,
+  black 85%,
+  transparent
   );
 
   mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
+  to right,
+  transparent,
+  black 15%,
+  black 85%,
+  transparent
   );
   transform-style: preserve-3d;
   transform: rotateX(18deg) translateZ(0);
@@ -254,6 +254,15 @@ body.cursor-hover #cursor-ring{
 
 #loop {
   animation: float3d 6s ease-in-out infinite;
+}
+
+@keyframes marquee-anim {
+  from {
+    transform: translateX(0) translateZ(40px);
+  }
+  to {
+    transform: translateX(-50%) translateZ(40px);
+  }
 }
 
 /* Canvas */
@@ -464,7 +473,7 @@ canvas{
 }
 
 .work-card{
-  border-right: 0.5px solid var(--deep);
+  border-right: 0.5px solid var(--border-mid);
   padding: 32px 36px;
   display: flex;
   flex-direction: column;
@@ -535,7 +544,7 @@ canvas{
   line-height: 1.4;
   color:beige;
   max-height: 0;
-  overflow: visible;
+  overflow: hidden;
   transition: max-height 0.4 ease, opacity 0.3 ease;
 }
 
