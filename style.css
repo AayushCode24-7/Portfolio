@@ -287,7 +287,7 @@ canvas{
 #page .hero-copy h3{
   font-family:var(--font-ui);
   font-size: 20px;
-  text-shadow: #c8f135;
+  /* text-shadow: 1 1 5px #c8f135; */
   font-weight: 700;
   color:var(--parchment);
 }
