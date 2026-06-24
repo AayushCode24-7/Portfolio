@@ -724,7 +724,7 @@ canvas{
   color: var(--volt);
 }
 
-/* #page4 .footer-line {
+#page4 .footer-line {
   position: absolute;
   bottom: 40px;
   left: 0; right: 0;
@@ -738,4 +738,4 @@ canvas{
   color: var(--mist);
   border-top: 0.5px solid var(--border);
   padding-top: 20px;
-} */
+}
