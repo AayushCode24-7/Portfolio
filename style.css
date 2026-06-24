@@ -659,3 +659,83 @@ canvas{
 
 /* Page 4 */
 
+#page4 .contact-label {
+  font-size: 10px;
+  font-weight: 700;
+  font-family:var(--font-ui);
+  text-transform: uppercase;
+  color: #c8f135;
+  margin-bottom: 20px;
+}
+
+/* #page4 .contact-heading {
+  font-family: var(--font-display);
+  font-size: 40px;
+}
+
+#page4 .contact-heading span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--parchment);
+}
+
+#page4 .contact-email {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 28px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--smoke);
+  margin-bottom: 48px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  text-align: center;
+}
+
+#page4 .contact-email:hover {
+  color: var(--volt);
+}
+
+.social-strip {
+  display: flex;
+  gap: 2px;
+  border: 0.5px solid var(--border-mid);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.social-link {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-right: 0.5px solid var(--border-mid);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.social-link:last-child {
+  border-right: none;
+}
+
+.social-link:hover {
+  background: var(--volt-dim);
+  color: var(--volt);
+}
+
+#page4 .footer-line {
+  position: absolute;
+  bottom: 40px;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mist);
+  border-top: 0.5px solid var(--border);
+  padding-top: 20px;
+} */
