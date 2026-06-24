@@ -172,7 +172,7 @@ body.cursor-hover #cursor-ring{
   border-top: 0.5px solid white;
   border-bottom: 0.5px solid whitesmoke;
   padding: 20px 20px;
-  z-index: 1;
+  z-index: 10;
 }
 #loop {
   -webkit-mask-image: linear-gradient(
@@ -198,12 +198,12 @@ body.cursor-hover #cursor-ring{
 /* The Back Loop */
 #loop h1 {
   font-family: var(--font-display);
-  font-size: 66px;
+  font-size: 76px;
   font-weight: 400;
-  color:#c8f135;
+  color:#a0c826;
   letter-spacing: 0.03em;
-  animation: marquee-anim 20s linear infinite;
-  padding-right: 80px;
+  animation: marquee-anim 18s linear infinite;
+  padding-right: 8px;
   white-space: nowrap;
   flex-shrink: 0;
 
@@ -214,14 +214,17 @@ body.cursor-hover #cursor-ring{
 
   transform: translateZ(40px);
 }
+
 #loop h1 b{
   color:#c8f135;
   font-weight: 900;
 }
+
 #loop h1 span{
   color:transparent;
-  -webkit-text-stroke: #c8f135;
+  -webkit-text-stroke: #ecede8;
 }
+
 #loop h1 i{
   font-family: var(--font-display);
   font-style: italic;
@@ -230,15 +233,16 @@ body.cursor-hover #cursor-ring{
 }
 
 #loop h1 span {
-  -webkit-text-stroke: 1px var(--parchment);
   color: transparent;
-  font-weight: 900;
+  -webkit-text-stroke: 1.2px var(--parchment);
+  font-weight: 700;
 }
 
 #loop h1 .volt-word {
   color: var(--volt);
   -webkit-text-stroke: 0;
 }
+
 @keyframes float3d {
   0% {
     transform: rotateX(18deg) translateY(0px);
@@ -542,13 +546,15 @@ canvas{
   font-weight: 400;
   line-height: 1.4;
   color:beige;
+  opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .work-card:hover .work-desc{
-  max-height: 80px;
+  opacity: 1;
+  max-height: 200px;
 }
 
 .work-arrow{
@@ -582,7 +588,7 @@ canvas{
   z-index: 10;
 }
 
-#page3 .field-content h3 {
+#page3 .field-content h1 {
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -742,7 +748,8 @@ canvas{
   position: absolute;
   bottom: 40px;
   left: 0; right: 0;
-  display: flex;
+  flex: wrap;
+  gap: 10px;
   justify-content: space-between;
   padding: 0 40px;
   font-size: 10px;
