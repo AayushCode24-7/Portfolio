@@ -691,11 +691,11 @@ canvas{
   text-align: center;
 }
 
-/*#page4 .contact-email:hover {
+#page4 .contact-email:hover {
   color: var(--volt);
 }
 
-.social-strip {
+.social {
   display: flex;
   gap: 2px;
   border: 0.5px solid var(--border-mid);
@@ -703,7 +703,7 @@ canvas{
   overflow: hidden;
 }
 
-.social-link {
+/*.social {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -715,11 +715,11 @@ canvas{
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.social-link:last-child {
+.social:last-child {
   border-right: none;
 }
 
-.social-link:hover {
+.social:hover {
   background: var(--volt-dim);
   color: var(--volt);
 }
