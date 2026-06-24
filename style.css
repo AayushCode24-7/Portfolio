@@ -703,7 +703,7 @@ canvas{
   overflow: hidden;
 }
 
-/*.social {
+.social {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -724,7 +724,7 @@ canvas{
   color: var(--volt);
 }
 
-#page4 .footer-line {
+/* #page4 .footer-line {
   position: absolute;
   bottom: 40px;
   left: 0; right: 0;
