@@ -55,7 +55,6 @@ html, body {
   border: 2px solid var(--volt);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 100;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
   opacity: 0.5;
@@ -673,24 +672,24 @@ canvas{
 }
 
 #page4 .contact-label {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700;
   font-family:var(--font-ui);
   text-transform: uppercase;
   color: #c8f135;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 #page4 .contact-heading {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 65px;
   text-transform: uppercase;
-  font-weight: 900
+  font-weight: 900;
 }
 
 #page4 .contact-heading span {
   color: transparent;
-  -webkit-text-stroke: 1.25px var(--parchment);
+  -webkit-text-stroke: 1.25px #c8f135;
 }
 
 #page4 .contact-email {
