@@ -213,7 +213,6 @@ body.cursor-hover #cursor-ring{
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
   0 2px 10px rgba(200,241,53,0.15);
 
-  animation: marquee-anim 35s linear infinite;
   transform: translateZ(40px);
 }
 #loop h1 b{
@@ -266,6 +265,7 @@ canvas{
   height: 100%;
   z-index: 5;
 }
+
 /* Sub-copy */
 #page .hero-copy{
   position: absolute;
