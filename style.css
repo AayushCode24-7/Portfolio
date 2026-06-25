@@ -700,11 +700,11 @@ canvas{
 
 #page4 .contact-email {
   font-family: var(--font-display);
-  font-size: clamp(18px, 2.2vw, 28px);
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 100;
   font-style: italic;
   color: var(--smoke);
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   text-decoration: none;
   transition: color 0.2s ease;
   display: block;
@@ -713,6 +713,7 @@ canvas{
 
 #page4 .contact-email:hover {
   color: var(--volt);
+  text-shadow: 0px 0px 5px #eded12;
 }
 
 .social {
@@ -742,12 +743,14 @@ canvas{
 .social-link:hover {
   background: var(--volt-dim);
   color: var(--volt);
+  text-shadow: 0px 0px 18px #c8f135;
 }
 
 #page4 .footer-line {
   position: absolute;
   bottom: 40px;
-  left: 0; right: 0;
+  left: 0; 
+  right: 0;
   flex: wrap;
   gap: 10px;
   justify-content: space-between;
@@ -756,7 +759,61 @@ canvas{
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--mist);
-  border-top: 0.5px solid var(--border);
+  color: white;
+  border-top: 0.5px solid #c8f135;
   padding-top: 20px;
+}
+
+/* ScanLine Sweep */
+
+#page2::after,
+#page4::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+
+@media (max-width: 780px) {
+  #nav {
+    padding: 16px 20px;
+  }
+
+  #nav .nav-links {
+    display: none;
+  }
+
+  #page1 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 8%;
+  }
+
+  #page1::before { display: none; }
+
+  .text-column {
+    max-width: 100%;
+  }
+
+  .text-column.right-side {
+    margin-top: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .bold-phrase { white-space: normal; }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    top: 42%;
+  }
+
+  .work-card { border-right: none; border-bottom: 0.5px solid var(--border); }
+
+  #page4 .contact-heading { font-size: 36px; }
 }
