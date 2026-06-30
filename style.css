@@ -312,17 +312,6 @@ canvas{
 
 /* Scroll Effect */
 
-/* Watermark */
-.sec-index{
-  position: absolute;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  color: var(--smoke);
-  z-index: 20;
-}
-
 #page .sec-index   { top: 12%; right: 5%; }
 #page1 .sec-index  { top: 8%;  left: 5%;  }
 #page2 .sec-index  { top: 8%;  right: 5%; }
