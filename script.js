@@ -32,7 +32,7 @@ function initLocomotiveScroll() {
 
 const locoScroll = initLocomotiveScroll();
 
-  //  2. CUSTOM MAGNETIC CURSOR
+  // CUSTOM MAGNETIC CURSOR
 
 (function initCursor() {
   const cursor     = document.getElementById("cursor");
@@ -147,7 +147,7 @@ const locoScroll = initLocomotiveScroll();
 // })();
 
 
-  //  4. CANVAS — 300-FRAME SCROLL SEQUENCE 
+  // CANVAS — 300-FRAME SCROLL SEQUENCE 
 (function initCanvas() {
   const canvas  = document.getElementById("hero-canvas") || document.querySelector("#page>canvas") || document.querySelector("canvas");
   if (!canvas) return;
@@ -222,7 +222,7 @@ const locoScroll = initLocomotiveScroll();
   }
 })();
 
-  //  5. PAGE PINNING SYSTEM
+  // PAGE PINNING SYSTEM
 ["#page1", "#page2", "#page3", "#page4"].forEach((selector) => {
   if (!document.querySelector(selector)) return;
   gsap.to(selector, {
@@ -236,7 +236,7 @@ const locoScroll = initLocomotiveScroll();
   });
 });
 
-  //  6. MOUSE-PARALLAX ON MANIFESTO COLUMNS
+  // MOUSE-PARALLAX ON MANIFESTO COLUMNS
 (function initParallax() {
   const colLeft  = document.getElementById("col-left");
   const colRight = document.getElementById("col-right");
@@ -276,10 +276,7 @@ const locoScroll = initLocomotiveScroll();
   lerpParallax();
 })();
 
-
-/* ==========================================================
-   7. ENTRANCE STAGGER ANIMATIONS
-   ========================================================== */
+  // ENTRANCE STAGGER ANIMATIONS
 (function initEntrances() {
   // Hero Copy
   gsap.from(".hero-copy", {
@@ -359,10 +356,7 @@ const locoScroll = initLocomotiveScroll();
   }
 })();
 
-
-/* ==========================================================
-   8. NAVIGATION DISCRETE SCROLL FX
-   ========================================================== */
+  // NAVIGATION DISCRETE SCROLL FX
 (function initNavEffect() {
   const nav = document.getElementById("nav");
   if (!nav) return;
