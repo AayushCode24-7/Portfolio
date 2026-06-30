@@ -1,5 +1,5 @@
   //LOCOMOTIVE SCROLL
-  
+
 function initLocomotiveScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -222,10 +222,7 @@ const locoScroll = initLocomotiveScroll();
   }
 })();
 
-
-/* ==========================================================
-   5. PAGE PINNING SYSTEM
-   ========================================================== */
+  //  5. PAGE PINNING SYSTEM
 ["#page1", "#page2", "#page3", "#page4"].forEach((selector) => {
   if (!document.querySelector(selector)) return;
   gsap.to(selector, {
@@ -239,10 +236,7 @@ const locoScroll = initLocomotiveScroll();
   });
 });
 
-
-/* ==========================================================
-   6. MOUSE-PARALLAX ON MANIFESTO COLUMNS
-   ========================================================== */
+  //  6. MOUSE-PARALLAX ON MANIFESTO COLUMNS
 (function initParallax() {
   const colLeft  = document.getElementById("col-left");
   const colRight = document.getElementById("col-right");
