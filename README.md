@@ -1,1 +1,1 @@
-updaeted soon
+This IS fully free to use template
