@@ -679,16 +679,53 @@ canvas{
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.05); /* Soft translucent dark style */
+  background: rgba(255, 255, 255, 0.043);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.8);
   padding: 8px 16px;
   border-radius: 6px;
-  font-family: sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 700;
   width: fit-content;
-  cursor: pointer;
+  cursor: none;
+}
+
+.vscode-badge:hover{
+  background-color: #0c7b7b;
+  /* color: #ffffff; */
+  transform: scale(1.5);
+  transition: ease-in-out 1s;
+}
+
+.github-badge:hover{
+  background-color: grey;
+  transform: scale(1.5);
+  transition:ease-in-out 1s;
+}
+
+.git-badge:hover{
+  background-color: orangered;
+  transform: scale(1.5);
+  transition:ease-in-out 1s;
+}
+
+.figma-badge:hover{
+  background-color: purple;
+  transform: scale(1.5);
+  transition:ease-in-out 1s;
+}
+
+.python-badge:hover{
+  background-color: rgb(137, 201, 41);
+  transform: scale(1.5);
+  transition:ease-in-out 1s;
+}
+
+.js-badge:hover{
+  background-color: rgb(175, 175, 19);
+  transform: scale(1.5);
+  transition:ease-in-out 1s;
 }
 /* Page 4 */
 
