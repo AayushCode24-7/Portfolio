@@ -360,7 +360,7 @@ canvas{
 
 /* Page 1 */
 #page1{
-  position: relative;
+  position: flex;
   height: 100vh;
   width: 100vw;
   background: var(--void);
@@ -386,20 +386,23 @@ canvas{
 .text-column{
   display: flex;
   flex-direction: column;
-  max-width: 38%;
+  width: 42%;
+  max-width: 50%;
   z-index: 10;
-  will-change: transform;
 }
 
 .text-column.left-side {
   text-align: left;
+  align-items: flex-start;
   margin-bottom: 20%;
+  transform: translateY(-15%);
 }
 
 .text-column.right-side {
   text-align: right;
   align-items: flex-end;
   margin-top: 20%;
+  transform: translateY(15%);
 }
 .bold-phrase {
   font-family: var(--font-ui);
@@ -428,7 +431,7 @@ canvas{
   font-weight: bolder;
   letter-spacing: 0.9px;
   text-transform: uppercase;
-  color: transparent;
+  color: var(--volt);
   -webkit-text-stroke: 0.9px var(--volt);
 }
 
@@ -439,6 +442,14 @@ canvas{
   text-transform: uppercase;
   color: var(--volt);
   margin-top: 14px;
+}
+canvas{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 /* Page 2 */
