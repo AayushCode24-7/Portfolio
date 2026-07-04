@@ -18,7 +18,6 @@
   --mist:      #3a3a3a;
   --volt:      #c8f135;
   --volt-dim:  rgba(200, 241, 53, 0.12);
-
   --font-display: 'Playfair Display', Georgia, serif;
   --font-ui:      'Space Grotesk', system-ui, sans-serif;
 }
@@ -144,20 +143,63 @@ body.cursor-hover #cursor-ring{
   color: #c8f135;
 }
 
-#nav .nav-date {
-  font-size: 12px;
-  font-weight: 500;
+/* LIQUID MORPHING NAV BADGE */
+.nav-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 22px;
+  cursor: none;
+  
+  color: var(--volt);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color:#c8f135;
-  border: 0.1px solid #ffffff;
-  padding: 5px 10px;
-  border-radius: 5px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+  user-select: none;
+
+  background: linear-gradient(18deg, var(--volt), #00f5d4, #111111, #00f5d4, var(--volt));
+  background-size: 300% 300%;
+  
+  border-radius: 15px 10px 20px 10px / 10px 15px 10px 20px;
+  border: 1px solid rgba(200, 241, 53, 0.2);
+  
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.3),
+              0 0 15px rgba(200, 241, 53, 0.15);
+
+  animation: morph-wide 6s ease-in-out infinite alternate,
+             flow-gradient 10s linear infinite;
+             
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
 }
 
-#nav .nav-date:hover {
-  background: #c8f135;
-  color: #000000;
-  border-color: #c8f135;
+.nav-date:hover {
+  transform: scale(1.05);
+  border-color: white;
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.5),
+              0 0 25px rgba(200, 241, 53, 0.45);
+}
+
+@keyframes morph-wide {
+  0% {
+    border-radius: 20px 15px 25px 12px / 12px 20px 15px 25px;
+  }
+  50% {
+    border-radius: 12px 25px 12px 25px / 20px 12px 25px 12px;
+  }
+  100% {
+    border-radius: 25px 12px 20px 15px / 15px 25px 12px 20px;
+  }
+}
+
+@keyframes flow-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Hero Page */
@@ -216,7 +258,6 @@ body.cursor-hover #cursor-ring{
   animation: marquee-anim 15s linear infinite;
   padding-right: 8px;
   white-space: nowrap;
-
 }
 
 #loop h1 b{
@@ -311,7 +352,6 @@ canvas{
 }
 
 /* Scroll Effect */
-
 #page .sec-index   { top: 12%; right: 5%; }
 #page1 .sec-index  { top: 8%;  left: 5%;  }
 #page2 .sec-index  { top: 8%;  right: 5%; }
@@ -319,7 +359,6 @@ canvas{
 #page4 .sec-index  { top: 8%;  right: 5%; }
 
 /* Page 1 */
-
 #page1{
   position: relative;
   height: 100vh;
@@ -403,7 +442,6 @@ canvas{
 }
 
 /* Page 2 */
-
 #page2 {
   position: relative;
   height: 100vh;
@@ -441,9 +479,8 @@ canvas{
   color: var(--parchment);
   text-decoration: underline;
 }
-/*  */
-/* Page 2 Grid */
 
+/* Page 2 Grid */
 .work-grid{
   position: absolute;
   bottom: 0;
@@ -577,7 +614,6 @@ canvas{
 }
 
 /* page 3 */
-
 #page3 {
   position: relative;
   height: 100vh;
@@ -681,7 +717,7 @@ canvas{
   color: var(--volt);
 }
 
-#page3 .badge{
+.badge{
   display: flex;
   align-items: center;
   gap: 12px;
@@ -690,12 +726,14 @@ canvas{
   color: rgba(255, 255, 255, 0.8);
   padding: 8px 16px;
   border-radius: 6px;
+  border-color: #252524;
   font-family: var(--font-ui);
   font-size: 15px;
   font-weight: 700;
   width: fit-content;
   cursor: none;
   transition: transform 0.3s ease, background-color 0.5s ease;
+  box-shadow: 1px 1px 5px white;
 }
 
 /* Tools */
@@ -726,6 +764,11 @@ canvas{
 }
 .sql-badge:hover{
   background-color: rgb(67, 67, 64);
+  transform: scale(1.2);
+}
+
+.cpp-badge:hover{
+  background: linear-gradient(90deg, #ffffff 50%, #007bff 50%);
   transform: scale(1.2);
 }
 
@@ -853,7 +896,6 @@ canvas{
 }
 
 /* ScanLine Sweep */
-
 #page2::after,
 #page4::after {
   content: '';
@@ -865,7 +907,7 @@ canvas{
   opacity: 0.6;
 }
 
-
+/* Media Queries */
 @media (max-width: 780px) {
   #nav {
     padding: 16px 20px;
