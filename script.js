@@ -32,6 +32,20 @@ function initLocomotiveScroll() {
 
 const locoScroll = initLocomotiveScroll();
 
+document.querySelectorAll('#nav a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(
+      this.getAttribute('href')
+    );
+
+    if (target) {
+      locoScroll.scrollTo(target);
+    }
+  });
+});
+
   // CUSTOM MAGNETIC CURSOR
 
 (function initCursor() {
@@ -168,7 +182,7 @@ const locoScroll = initLocomotiveScroll();
     return `./model/male${num}.png`;
   }
 
-  const frameCount = 300;
+  const frameCount = 75;
   const images     = [];
   const imageSeq   = { frame: 0 };
 

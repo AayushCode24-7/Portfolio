@@ -131,12 +131,13 @@ body.cursor-hover #cursor-ring{
 }
 
 #nav .nav-links a{
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 17px;
+  font-weight: 600;
   text-transform: uppercase;
-  color:honeydew;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #c8f135;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.7s ease-in-out;
 }
 
 #nav .nav-links a:hover{
@@ -904,6 +905,71 @@ canvas{
   border-top: 0.5px solid #c8f135;
   padding-top: 20px;
   flex-wrap: wrap;
+}
+
+#page4 .footer-line .btn-coffee {
+  margin: 0 auto;
+  max-width: max-content;
+}
+
+/*BUY ME A COFFEE */
+.footer-line .btn-coffee {
+  display: inline-flex; /* Fixed from relative */
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 11px; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  color: var(--parchment);
+  background: var(--deep);
+  border: 1px solid var(--deep); /* Given an explicit border width */
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: relative;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Coffee Emoji */
+.footer-line .btn-coffee .btn-text {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),letter-spacing 0.3s ease;
+}
+
+/* Emoji bounce controls */
+.footer-line .btn-coffee .btn-emoji {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* INTERACTIVE HOVER STATES */
+.footer-line .btn-coffee:hover {
+  color: var(--void);
+  background: var(--volt);
+  border-color: var(--parchment);
+  box-shadow: 0 0 25px var(--parchment);
+}
+
+/* Hover to match the emoji's energy */
+.footer-line .btn-coffee:hover .btn-text {
+  transform: translateY(-1px);
+  letter-spacing: 0.18em;
+}
+
+/* Tilts and scales the coffee cup on hover */
+.footer-line .btn-coffee:hover .btn-emoji {
+  transform: translateY(-2px) rotate(12deg) scale(1.5);
+}
+
+/* Click feedback compression */
+.footer-line .btn-coffee:active {
+  transform: scale(0.85);
+  background-color: #00f5d4;
+  box-shadow: 0 1px 25px #ffffff;
 }
 
 /* ScanLine Sweep */
