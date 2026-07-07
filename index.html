@@ -12,12 +12,28 @@
 </head>
 
 <body>
+    <!-- SYSTEM PRELOAD LAYER -->
+    <div id="loader-layer">
+        <div class="loader-pane pane-top"></div>
+        <div class="loader-pane pane-bottom"></div>
+        
+        <div class="loader-center-content">
+            <div class="loader-meta-title">INITIALIZING SITE ARCHITECTURE</div>
+            <div class="loader-display-row">
+                <span id="loader-counter">00</span>
+                <span class="loader-percent">%</span>
+            </div>
+            <div class="loader-bar-wrapper">
+                <div id="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
 
+    <!-- UI CURSORS -->
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
 
-    <div id="scanlines"></div>
-
+    <!-- NAVIGATION BAR -->
     <nav id="nav">
         <div class="nav-name">
             <b>AAYUSH'S | <span>PORTFOLIO</span></b>
@@ -26,9 +42,9 @@
         <div class="nav-right">
             <ul class="nav-links">
                 <li><a href="#page">Home</a></li>
-                <li><a href="#page1">Manifesto</a></li>
-                <li><a href="#page2">Work</a></li>
-                <li><a href="#page3">Tech Stack</a></li>
+                <li><a href="#page1">Work</a></li>
+                <li><a href="#page2">Tech Stack</a></li>
+                <li><a href="#page3">about me</a></li>
                 <li><a href="#page4">Contact</a></li>
             </ul>
 
@@ -36,47 +52,21 @@
         </div>
     </nav>
 
+    <!-- MAIN SCROLL WRAPPER -->
     <div id="main">
 
+        <!-- 1. HOME -->
         <div id="page">
-
             <span class="sec-index"></span>
-
             <div id="loop">
                 <h1>
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
-                    <b>·</b>&nbsp;
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp; <b>·</b>&nbsp; <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;
                 </h1>
-
                 <h1>
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
-                    <b>·</b>&nbsp;
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp; <b>·</b>&nbsp; <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;
                 </h1>
-
                 <h1>
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
-                    <b>·</b>&nbsp;
-                    <b>I AM</b> AAYUSH,
-                    <b><i>A</i></b> FULL STACK DEVELOPER
-                    <b>·</b>
-                    THIS IS MY <span>PORTFOLIO</span>&nbsp;
+                    <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp; <b>·</b>&nbsp; <b>I AM</b> AAYUSH, <b><i>A</i></b> FULL STACK DEVELOPER <b>·</b> THIS IS MY <span>PORTFOLIO</span>&nbsp;
                 </h1>
             </div>
 
@@ -84,67 +74,53 @@
 
             <div class="hero-copy">
                 <h3>
-                    Bridging the gap between <b>beautiful design</b> and
-                    <i>powerful logic</i>.
-                    <br>
-                    I architect robust <b>backend systems</b> and craft seamless
-                    user experiences from scratch.
+                    Bridging the gap between <b>beautiful design</b> and <i>powerful logic</i>. <br> I architect robust <b>backend systems</b> and craft seamless user experiences from scratch.
                 </h3>
                 <h4>Always ready to build something incredible.</h4>
             </div>
-
-
         </div>
 
+        <!-- 2. WORK -->
         <div id="page1">
-
             <span class="sec-index"></span>
-
-            <div class="text-column left-side" id="col-left">
-
-                <h3 class="col-label"><b>VISUAL INTERACTION</b></h3>
-
-                <h1 class="bold-phrase">TURNING IDEAS</h1>
-                <h1 class="bold-phrase accent">TO CODE</h1>
-
-                <h1 class="bold-phrase">CRAFTING</h1>
-                <h1 class="bold-phrase accent">DIGITAL ART</h1>
-
-                <h1 class="bold-phrase">DESIGNING FOR</h1>
-                <h1 class="bold-phrase accent">
-                    <span class="volt-word">IMPACT</span>
-                </h1>
-
-            </div>
-
-            <div class="text-column right-side" id="col-right">
-
-                <h1 class="bold-phrase">ENGINEERING</h1>
-                <h1 class="bold-phrase accent">SYSTEMS</h1>
-
-                <h1 class="bold-phrase">OPTIMIZING</h1>
-                <h1 class="bold-phrase accent">EVERY FRAME</h1>
-
-                <h1 class="bold-phrase">OWNING THE</h1>
-                <h1 class="bold-phrase accent">
-                    <span class="volt-word">STACK</span>
-                </h1>
-
-            </div>
-
-        </div>
-
-        <div id="page2">
-
-            <span class="sec-index"></span>
-
             <div class="work-header">
-                <h3>WORK VAULT</h3>
-                <h1>Best Till Now</h1>
+                <div class="header-main">
+                    <h2>WORK VAULT</h2>
+                    <h1>Best Till Now</h1>
+                    <h3>Hover TO See Details</h3>
+                </div>
+                
+                <!-- TELEMETRY METRICS PANEL -->
+                <div class="work-telemetry">
+                    <div class="telemetry-node">
+                        <span class="telemetry-dot blinking"></span>
+                        <div class="telemetry-meta">
+                            <span class="telemetry-label">SYSTEM_STATUS</span>
+                            <span class="telemetry-value text-volt">ACTIVE // PRODUCTION</span>
+                        </div>
+                    </div>
+                    <div class="telemetry-node">
+                        <div class="telemetry-meta">
+                            <span class="telemetry-label">TOTAL_REPOS</span>
+                            <span class="telemetry-value" id="git-repos">--</span>
+                        </div>
+                    </div>
+                    <div class="telemetry-node">
+                        <div class="telemetry-meta">
+                            <span class="telemetry-label">YEAR_COMMITS</span>
+                            <span class="telemetry-value text-volt" id="git-commits">--</span>
+                        </div>
+                    </div>
+                    <div class="telemetry-node">
+                        <div class="telemetry-meta">
+                            <span class="telemetry-label">LAST_PUSH</span>
+                            <span class="telemetry-value" id="git-activity">FETCHING...</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="work-grid">
-
                 <div class="work-card">
                     <div>
                         <div class="work-num">1. (2025)</div>
@@ -158,18 +134,18 @@
                         </div>
 
                         <div class="work-desc">
-                            Airline Information System is a modular Python console
-                            application that streamlines flight management and bookings.
-                            It eliminates data-entry errors through strict validation,
-                            ensures data persistence through file handling, and
-                            demonstrates robust crash-resistant error handling.
+                          Built a flight management and booking system using Python and SQL.
+                          Features include flight scheduling, passenger reservations, seat
+                          availability tracking, and persistent database storage. Designed
+                          with robust validation and error handling to ensure reliable
+                          operation and data integrity.
                         </div>
 
                         <div class="work-actions">
-                            <a href="https://github.com/AayushCode24-7/Airline-Information-System.git" target="_blank">
+                            <a href="https://airline-information-system-5ggdxjv7ma7lskt4ctpp8g.streamlit.app/" target="_blank">
                                 Live Demo
                             </a>
-                            <a href="https://github.com/AayushCode24-7" target="_blank">
+                            <a href="https://github.com/AayushCode24-7/Airline-Information-System.git" target="_blank">
                                 GitHub
                             </a>
                         </div>
@@ -191,9 +167,10 @@
                         </div>
 
                         <div class="work-desc">
-                            A modern dark-themed community landing page for developers,
-                            featuring a responsive layout, interactive join form,
-                            CSS-based charts, and referral features.
+                            Designed and developed a responsive developer community landing
+                            page featuring modern UI patterns, interactive forms, animated
+                            components, and mobile-first layouts. Focused on accessibility,
+                            performance, and user engagement.
                         </div>
 
                         <div class="work-actions">
@@ -201,7 +178,7 @@
                                Live Demo
                             </a>
 
-                            <a href="https://github.com/AayushCode24-7" target="_blank">
+                            <a href="https://github.com/AayushCode24-7/Figma_Project.git" target="_blank">
                                GitHub
                             </a>
                         </div>
@@ -223,9 +200,10 @@
                         </div>
 
                         <div class="work-desc">
-                            A streaming platform clone built to practice frontend
-                            architecture, database integration, responsive layouts,
-                            and user-focused design.
+                            Developed a Netflix-inspired streaming platform interface with
+                            responsive layouts, dynamic content sections, authentication
+                            screens, and database-backed functionality. Built to strengthen
+                            frontend architecture and full-stack development skills.
                         </div>
 
                         <div class="work-actions">
@@ -233,7 +211,7 @@
                                Live Demo
                             </a>
 
-                            <a href="https://github.com/AayushCode24-7" target="_blank">
+                            <a href="https://github.com/AayushCode24-7/Netflix-Clone.git" target="_blank">
                                GitHub
                             </a>
                         </div>
@@ -241,143 +219,94 @@
 
                     <span class="work-arrow">↗</span>
                 </div>
-
             </div>
-
         </div>
 
-        <div id="page3">
-
+        <!-- 3. TECH STACK -->
+        <div id="page2">
             <span class="sec-index"></span>
-
             <div class="field-content">
-
-                <h1 data-text="My Tech Stack">
-                    My Tech Stack
-                </h1>
-
-                <p class="field-sub">
-                    Technologies I use to design, build, and deploy modern applications.
-                </p>
+                <h1 data-text="My Tech Stack">My Tech Stack</h1>
+                <p class="field-sub">Technologies I use to design, build, and deploy modern applications.</p>
 
                 <div class="stack-grid">
-
                     <div class="stack-group">
                         <h3>Frontend</h3>
-                        <div class="badge html-badge">
-                            <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
-                        </div>
-
-                        <div class="badge css-badge">
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <span>CSS</span>
-                        </div>
-
-                        <div class="badge js-badge">
-                            <i class="fa-brands fa-square-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-
-                        <div class="badge gsap-badge">
-                            <i class="fa-solid fa-bolt"></i>
-                            <span>GSAP</span>
-                        </div>
+                        <div class="badge html-badge"><i class="fa-brands fa-html5"></i> <span>HTML</span></div>
+                        <div class="badge css-badge"><i class="fa-brands fa-css3-alt"></i> <span>CSS</span></div>
+                        <div class="badge js-badge"><i class="fa-brands fa-square-js"></i> <span>JavaScript</span></div>
+                        <div class="badge gsap-badge"><i class="fa-solid fa-bolt"></i> <span>GSAP</span></div>
                     </div>
 
                     <div class="stack-group">
                         <h3>Backend</h3>
-                        <div class="badge python-badge">
-                            <i class="fa-brands fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="badge sql-badge">
-                            <i class="fa-solid fa-database"></i>
-                            <span>SQL</span>
-                        </div>
-                        <div class="badge cpp-badge">
-                            <i class="fa-solid fa-c"></i>
-                            <span>CPP</span>
-                        </div>
+                        <div class="badge python-badge"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+                        <div class="badge sql-badge"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+                        <div class="badge cpp-badge"><i class="fa-solid fa-c"></i> <span>CPP</span></div>
                     </div>
 
                     <div class="stack-group">
                         <h3>Tools</h3>
-
-                        <div class="badge git-badge">
-                            <i class="fa-brands fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-
-                        <div class="badge github-badge">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-
-                        <div class="badge vscode-badge">
-                            <i class="fa-solid fa-code"></i>
-                            <span>VS Code</span>
-                        </div>
-
-                        <div class="badge figma-badge">
-                            <i class="fa-brands fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
+                        <div class="badge git-badge"><i class="fa-brands fa-git-alt"></i> <span>Git</span></div>
+                        <div class="badge github-badge"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+                        <div class="badge vscode-badge"><i class="fa-solid fa-code"></i> <span>VS Code</span></div>
+                        <div class="badge figma-badge"><i class="fa-brands fa-figma"></i> <span>Figma</span></div>
                     </div>
                 </div>
             </div>
-
         </div>
 
+        <!-- 4. ABOUT ME -->
+        <div id="page3">
+            <span class="sec-index"></span>
+            <div class="about-container">
+                
+                <!-- Left Side: Interactive Parallax Bio Container -->
+                <div class="about-bio" id="col-left">
+                    <h2>About <span>Me</span></h2>
+                    <p>I am a highly passionate Full Stack Developer focused on creating immersive, performant visual web platforms while engineering strict backend layout patterns.</p>
+                    <p>My workflow combines clean programming practices with modern user experience interactions to build functional applications that look amazing and work flawlessly under the hood.</p>
+                </div>
+
+                <!-- Right Side: Interactive Parallax Meta Profiles Wrapper -->
+                <div class="about-profile" id="col-right">
+                    <div class="profile-meta-item">
+                        <h4>Role</h4>
+                        <p>Full Stack Engineer</p>
+                    </div>
+                    <div class="profile-meta-item">
+                        <h4>Location</h4>
+                        <p>India</p>
+                    </div>
+                    <div class="profile-meta-item">
+                        <h4>Focus</h4>
+                        <p>Interactive Logic & Databases</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 5. CONTACT -->
         <div id="page4">
             <span class="sec-index"></span>
             <span class="contact-label">Let's Collaborate</span>
-            <h1 class="contact-heading">
-                Get In <span>Touch</span>
-            </h1>
+            <h1 class="contact-heading">Get In <span>Touch</span></h1>
 
-            <a href="mailto:aayushjindal65@gmail.com" class="contact-email">
-                aayushjindal65@gmail.com
-            </a>
+            <a href="mailto:aayushjindal65@gmail.com" class="contact-email">aayushjindal65@gmail.com</a>
 
             <div class="social">
-
-                <a href="https://github.com/AayushCode24-7"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="social-link">
-                    Github
-                </a>
-
-                <a href="https://www.instagram.com/aayush_jindall/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="social-link">
-                    Instagram
-                </a>
-
-                <a href="https://www.linkedin.com/in/aayush-jindal-60016837a/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="social-link">
-                    LinkedIn
-                </a>
-
-                <!-- <a href="#"
-                   class="social-link">
-                    Resume ↓
-                </a> -->
-
+                <a href="https://github.com/AayushCode24-7" target="_blank" rel="noopener noreferrer" class="social-link">Github</a>
+                <a href="https://www.instagram.com/aayush_jindall/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                <a href="https://www.linkedin.com/in/aayush-jindal-60016837a/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
             </div>
+
             <div class="footer-line">
-
                 <span>© 2026 All rights reserved.</span>
-
                 <a href="https://onlychai.neocities.org/support?name=Aayush&upi=7743092379%40nyes" target="_self" class="btn-coffee">
                     <span class="btn-text">Buy Me A Coffee</span>
                     <span class="btn-emoji">☕</span>
                 </a>
-
                 <span>Full Stack Developer</span>
             </div>
         </div>
