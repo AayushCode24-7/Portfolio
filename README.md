@@ -1,4 +1,4 @@
-# Aayush Jindal | Portfolio Website
+# Portfolio Website
 
 Welcome to the source code of my personal portfolio website. This project showcases my skills, projects, and experience as a developer through a modern, responsive, and interactive interface.
 
